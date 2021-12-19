@@ -1,0 +1,607 @@
+/*
+ * Globals
+ */
+
+@font-face {
+    font-family: 'Cafe24Oneprettynight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'DancingScript-b';
+    src: url('../font/DancingScript-Bold.ttf') format('truetype');
+}
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: rgba(250, 235, 235, 0.89);
+}
+
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+    color: #484747;
+    text-shadow: none; /* Prevent inheritance from `body` */
+    background-color: #fff;
+    border: .05rem solid #fff;
+}
+
+.top-title {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #484747;
+    text-shadow: none;
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.top-title-sub {
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+    font-family: Cafe24Oneprettynight;
+    font-size: 1.15rem;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 80%;
+    background-color: rgba(250, 235, 235, 0.89);
+}
+
+html {
+    font-size: 16px;
+    background-color: rgba(250, 235, 235, 0.89);
+}
+
+@media screen and (max-width: 430px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    html {
+        font-size: 11px;
+    }
+}
+
+body {
+    display: -ms-flexbox;
+    display: flex;
+    color: #fff;
+    background-color: rgba(250, 235, 235, 0.89);
+}
+
+.cover-container {
+    background-color: rgba(250, 235, 235, 0.89);
+    max-width: 42em;
+}
+
+.cover-container-2 {
+    max-width: 42em;
+    color: black;
+}
+
+
+/*
+ * Header
+ */
+.masthead {
+    margin-bottom: 2rem;
+}
+
+.masthead-brand {
+    margin-bottom: 0;
+}
+
+.nav-masthead .nav-link {
+    padding: .25rem 0;
+    font-weight: 700;
+    color: rgba(255, 255, 255, .5);
+    background-color: rgba(250, 235, 235, 0.89);
+    border-bottom: .25rem solid transparent;
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+    border-bottom-color: rgba(255, 255, 255, .25);
+}
+
+.nav-masthead .nav-link + .nav-link {
+    margin-left: 1rem;
+}
+
+.nav-masthead .active {
+    color: #fff;
+    border-bottom-color: #fff;
+}
+
+.cover-heading {
+    margin-top: 7.5rem;
+    color: #fefefe;
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+}
+
+.top-div {
+    width: 100%;
+}
+
+header {
+    background-image: url("../resource/img/wedding_picture/9a.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (min-width: 48em) {
+    .masthead-brand {
+        float: left;
+    }
+
+    .nav-masthead {
+        float: right;
+    }
+}
+
+/*
+ * section 1 - 시 인용
+ */
+.section1-title {
+    background-color: rgba(250, 235, 235, 0.89);
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+    font-size: 1rem;
+}
+
+.section1-main {
+    background-color: rgba(250, 235, 235, 0.89);
+    font-family: Cafe24Oneprettynight;
+    line-height: 2em;
+    font-size: 1.2rem;
+}
+
+.section1-sub {
+    font-family: Cafe24Oneprettynight;
+    line-height: 2.1em;
+    font-size: 1.35rem;
+}
+
+.section1-sub2 {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    line-height: 2.1em;
+    font-size: 1.35rem;
+}
+
+.section1-sub2 .small {
+    font-family: Cafe24Oneprettynight;
+    font-size: 1.2rem;
+}
+
+.insert-image {
+    background-color: rgba(250, 235, 235, 0.89);
+    font-family: Cafe24Oneprettynight;
+    background-size: cover;
+    background-position: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section2-title {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    margin-top: 1em;
+    color: #484747;
+    font-size: 1.35rem;
+    text-shadow: none;
+}
+
+.section2-main {
+    font-family: Cafe24Oneprettynight;
+    line-height: 1.5em;
+    font-size: 1.2rem;
+    color: #484747;
+    position: relative;
+}
+
+
+.section2-main-after {
+    background-image: url("../resource/img/logo/flower.png");
+    background-position: center;
+    max-width: 50em;
+}
+
+.section2-sub {
+    color: #484747;
+    font-family: Cafe24Oneprettynight;
+    line-height: 2em;
+    font-size: 1.2rem;
+}
+
+.section3 {
+    background-color: rgba(250, 235, 235, 0.89);
+}
+
+.section3-title {
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+}
+
+.section3-main {
+    font-family: DancingScript-b;
+    line-height: 1.5em;
+    font-size: 2rem;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.section3-image {
+    box-shadow: 2px 2px 5px #999;
+}
+
+.section4-title {
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+}
+
+.section4-sec1-2 {
+    padding-top: 0.1rem;
+}
+
+.section4-sec1 {
+    font-family: Cafe24Oneprettynight;
+    line-height: 1.5em;
+    font-size: 1.3rem;
+}
+
+.section4-sec2 {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    line-height: 1.5em;
+    font-size: 1.35rem;
+}
+
+.section4-sec3 {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    line-height: 1.5em;
+    font-size: 1.35rem;
+    background: none;
+    border: none;
+    color: #55CCCC;
+}
+
+.section4-sec3-g {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    line-height: 1.5em;
+    font-size: 1.35rem;
+    background: none;
+    border: none;
+    color: #FF99CC;
+}
+
+/*달력*/
+.section5 {
+    background-color: rgba(250, 235, 235, 0.89);
+}
+
+.section5-title {
+    font-family: DancingScript-b;
+    line-height: 1.5em;
+    font-size: 2rem;
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+}
+
+.section5-month {
+    font-family: Cafe24Oneprettynight;
+    line-height: 1.5em;
+    font-size: 1.7rem;
+}
+
+.section5-main {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #484747;
+    text-shadow: none;
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.section5-mini {
+    font-family: Cafe24Oneprettynight;
+    line-height: 0.5em;
+    font-size: 1rem;
+}
+
+.section5-sub {
+    font-family: Cafe24Oneprettynight;
+    line-height: 1.5em;
+    font-size: 1.3rem;
+}
+
+.section5-table {
+    font-family: Cafe24Oneprettynight;
+    line-height: 1.5em;
+    font-size: 1.3rem;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.section5-table tr td {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+}
+
+.section5-table tr .sun {
+    color: red;
+}
+
+.section5-table tr .check {
+    color: white;
+    background-color: chocolate;
+    border-radius: 50px;
+}
+
+.section5-table tr:first-child td {
+    padding-top: 2em;
+}
+
+.section5-table tr:last-child td {
+    padding-bottom: 2em;
+}
+
+.section6-title {
+    background-color: rgba(250, 235, 235, 0.89);
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+}
+
+.section6-location {
+    background-color: rgba(250, 235, 235, 0.89);
+    font-family: Cafe24Oneprettynight;
+    color: #484747;
+    text-shadow: none;
+}
+
+.section6-main {
+    font-family: DancingScript-b;
+    line-height: 1.5em;
+    font-size: 2rem;
+}
+
+.section6-location-main {
+    font-family: Cafe24Oneprettynight;
+    line-height: 1.5em;
+    font-size: 1.3rem;
+}
+
+.section6-location-card {
+    font-family: Cafe24Oneprettynight;
+    line-height: 0.9em;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.section6-sub {
+    font-family: Cafe24Oneprettynight;
+    line-height: 1.5em;
+    font-size: 1.1rem;
+}
+
+.section6-location-sub {
+    background-color: rgba(250, 235, 235, 0.89);
+    font-family: Cafe24Oneprettynight;
+    line-height: 2em;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/*대중교통 보기*/
+.section7 {
+    background-color: rgba(250, 235, 235, 0.89);
+}
+
+.section7-title {
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+}
+
+.section7-modal {
+    color: #484747;
+}
+
+.section7-modal-title {
+    font-size: 1.4rem;
+}
+
+.section7-modal-content {
+    font-size: 1.2rem;
+}
+
+.section7-main {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    line-height: 1.4em;
+    font-size: 1.4rem;
+}
+
+.section7-button {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background-color: #e0adad;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+}
+
+.section7-button:hover {
+    background-color: #CC9999;
+    color: #fff;
+    border: 0;
+}
+
+.section7-button:active {
+    background-color: #996666;
+    color: #fff;
+    border: 0;
+}
+
+.section7-button:valid {
+    background-color: #CC9999;
+    color: #fff;
+    border: 0;
+}
+
+.section8 {
+    font-family: Cafe24Oneprettynight;
+    background-color: rgba(250, 235, 235, 0.89);
+}
+
+.section8-title {
+    margin-top: 1em;
+    color: #484747;
+    text-shadow: none;
+}
+
+.section8-main {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    line-height: 1.4em;
+    font-size: 1.4rem;
+}
+
+.section8-mini {
+    font-family: Cafe24Oneprettynight;
+    line-height: 2em;
+    font-size: 1rem;
+}
+
+.section8-sub {
+    background-color: rgba(250, 235, 235, 0.89);
+    font-family: Cafe24Oneprettynight;
+    color: #484747;
+    line-height: 2em;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+.section8-button {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    background-color: #e0adad;
+    color: #fff;
+    border: 0;
+    border-radius: 50px;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    margin-bottom: 0.7em;
+}
+
+.kakao-button {
+    font-family: Cafe24Oneprettynight;
+    font-weight: bolder;
+    font-size: 1rem;
+    background-color: #f8cb49;
+    color: #484747;
+    border: 0;
+    border-radius: 50px;
+}
+
+.bgm-box {
+    display: flex;
+    margin: 5px;
+    vertical-align: middle;
+    justify-content: flex-end;
+    animation-duration: 2s;
+    animation-name: fade-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.bgm-btn {
+    color: #74a150;
+    text-align: right;
+    font-family: 'Gamja Flower';
+}
+
+@keyframes fade-in-out {
+    from {
+        opacity: 1.0;
+    }
+
+    to {
+        opacity: 0.5;
+    }
+}
+
+.paused {
+    -webkit-animation-play-state: paused !important;
+    -moz-animation-play-state: paused !important;
+    -o-animation-play-state: paused !important;
+    animation-play-state: paused !important;
+}
+
+/*
+ * Cover
+ */
+.cover {
+    max-height: 40em;
+    /*처음 사진 길이 조절*/
+    padding: 0 1.5rem;
+}
+
+.cover .btn-lg {
+    padding: .75rem 1.25rem;
+    font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+    color: rgba(255, 255, 255, .5);
+}

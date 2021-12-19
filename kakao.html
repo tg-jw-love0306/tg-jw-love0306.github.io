@@ -1,0 +1,79 @@
+<!dochtml>
+<html>
+<title>모바일 청첩장 카카오톡 공유 사이트</title>
+<head>
+    <meta charset="utf-8"/>
+    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+</head>
+<body>
+<h1>모바일 청첩장 카카오톡 공유하기<br>
+
+    <a id="kakao-link-btn">
+        <img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png" width="195"
+             height="195" style="max-width: 500%; height: auto;">
+    </a> 전송 </h1>
+<script type='text/javascript'>
+    Kakao.init('3651ef432b77f27d1ab807157fbb6731');
+    Kakao.Link.createCustomButton({container: '#kakao-link-btn', templateId: 54903,});
+</script>
+</body>
+</html>
+
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WQ4FRQZ');
+
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-131420949-3');
+
+function shareStory() {
+if(!Kakao.isInitialized()){
+Kakao.init('8ef91e329f924a8c7ca6f1a0d7029984');
+}
+Kakao.Story.open({
+url: 'https://jh-sh-wedding.github.io',
+text: '모바일 초대장 연결~! #바른손카드 #모바일초대장 :)'
+});
+}
+
+function gaClick(eventName, data) {
+try {
+gtag('event', 'click', {
+'event_category': eventName,
+'event_label': data,
+});
+} catch(e) {
+
+}
+return true;
+}
+
+Kakao.init('8ef91e329f924a8c7ca6f1a0d7029984');
+Kakao.Link.createDefaultButton({
+container: '#kakao-link-btn',
+objectType: 'feed',
+content: {
+title: '조정훈♥명승희의 결혼식에 초대합니다.',
+description: '2021년 2월 6일 PM 12시 30분 \n강남구 역삼동 680 벨라비타컨벤션',
+imageUrl: 'https://jhsh-wedding.com/images/3.jpg',
+imageWidth: 412,
+imageHeight: 240,
+link: {
+mobileWebUrl: 'https://jhsh-wedding.com',
+webUrl: 'https://jhsh-wedding.com'
+}
+},
+buttons: [
+{
+title: '웹으로 보기',
+link: {
+mobileWebUrl: 'https://jhsh-wedding.com',
+webUrl: 'https://jhsh-wedding.com'
+}
+}
+]
+});
