@@ -19,6 +19,7 @@ a,
 a:focus,
 a:hover {
     color: rgba(250, 235, 235, 0.89);
+    background-color: rgba(250, 235, 235, 0.89);
 }
 
 /* Custom default button */
@@ -27,7 +28,7 @@ a:hover {
 .btn-secondary:focus {
     color: #484747;
     text-shadow: none; /* Prevent inheritance from `body` */
-    background-color: #fff;
+    background-color: rgba(250, 235, 235, 0.89);
     border: .05rem solid #fff;
 }
 
@@ -36,6 +37,7 @@ a:hover {
     margin-bottom: 1em;
     color: #484747;
     text-shadow: none;
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     font-weight: bolder;
     font-size: 1.7rem;
@@ -45,6 +47,7 @@ a:hover {
     margin-top: 1em;
     color: #484747;
     text-shadow: none;
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     font-size: 1.15rem;
 }
@@ -67,30 +70,35 @@ html {
 
 @media screen and (max-width: 430px) {
     html {
+        background-color: rgba(250, 235, 235, 0.89);
         font-size: 15px;
     }
 }
 
 @media screen and (max-width: 380px) {
     html {
+        background-color: rgba(250, 235, 235, 0.89);
         font-size: 14px;
     }
 }
 
 @media screen and (max-width: 360px) {
     html {
+        background-color: rgba(250, 235, 235, 0.89);
         font-size: 13px;
     }
 }
 
 @media screen and (max-width: 320px) {
     html {
+        background-color: rgba(250, 235, 235, 0.89);
         font-size: 12px;
     }
 }
 
 @media screen and (max-width: 300px) {
     html {
+        background-color: rgba(250, 235, 235, 0.89);
         font-size: 11px;
     }
 }
@@ -108,6 +116,7 @@ body {
 }
 
 .cover-container-2 {
+    background-color: rgba(250, 235, 235, 0.89);
     max-width: 42em;
     color: black;
 }
@@ -117,10 +126,12 @@ body {
  * Header
  */
 .masthead {
+    background-color: rgba(250, 235, 235, 0.89);
     margin-bottom: 2rem;
 }
 
 .masthead-brand {
+    background-color: rgba(250, 235, 235, 0.89);
     margin-bottom: 0;
 }
 
@@ -134,19 +145,23 @@ body {
 
 .nav-masthead .nav-link:hover,
 .nav-masthead .nav-link:focus {
+    background-color: rgba(250, 235, 235, 0.89);
     border-bottom-color: rgba(255, 255, 255, .25);
 }
 
 .nav-masthead .nav-link + .nav-link {
+    background-color: rgba(250, 235, 235, 0.89);
     margin-left: 1rem;
 }
 
 .nav-masthead .active {
+    background-color: rgba(250, 235, 235, 0.89);
     color: #fff;
     border-bottom-color: #fff;
 }
 
 .cover-heading {
+    background-color: rgba(250, 235, 235, 0.89);
     margin-top: 7.5rem;
     color: #fefefe;
     font-family: Cafe24Oneprettynight;
@@ -154,10 +169,12 @@ body {
 }
 
 .top-div {
+    background-color: rgba(250, 235, 235, 0.89);
     width: 100%;
 }
 
 header {
+    background-color: rgba(250, 235, 235, 0.89);
     background-image: url("../resource/img/wedding_picture/9a.jpg");
     background-repeat: no-repeat;
     background-size: contain;
@@ -166,10 +183,12 @@ header {
 
 @media (min-width: 48em) {
     .masthead-brand {
+        background-color: rgba(250, 235, 235, 0.89);
         float: left;
     }
 
     .nav-masthead {
+        background-color: rgba(250, 235, 235, 0.89);
         float: right;
     }
 }
@@ -193,12 +212,14 @@ header {
 }
 
 .section1-sub {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     line-height: 2.1em;
     font-size: 1.35rem;
 }
 
 .section1-sub2 {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     font-weight: bolder;
     line-height: 2.1em;
@@ -206,6 +227,7 @@ header {
 }
 
 .section1-sub2 .small {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     font-size: 1.2rem;
 }
@@ -221,6 +243,7 @@ header {
 }
 
 .section2-title {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     font-weight: bolder;
     margin-top: 1em;
@@ -230,6 +253,7 @@ header {
 }
 
 .section2-main {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     line-height: 1.5em;
     font-size: 1.2rem;
@@ -239,12 +263,14 @@ header {
 
 
 .section2-main-after {
+    background-color: rgba(250, 235, 235, 0.89);
     background-image: url("../resource/img/logo/flower.png");
     background-position: center;
     max-width: 50em;
 }
 
 .section2-sub {
+    background-color: rgba(250, 235, 235, 0.89);
     color: #484747;
     font-family: Cafe24Oneprettynight;
     line-height: 2em;
@@ -256,12 +282,14 @@ header {
 }
 
 .section3-title {
+    background-color: rgba(250, 235, 235, 0.89);
     margin-top: 1em;
     color: #484747;
     text-shadow: none;
 }
 
 .section3-main {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: DancingScript-b;
     line-height: 1.5em;
     font-size: 2rem;
@@ -270,6 +298,7 @@ header {
 }
 
 .section3-image {
+    background-color: rgba(250, 235, 235, 0.89);
     box-shadow: 2px 2px 5px #999;
 }
 
@@ -460,6 +489,7 @@ header {
 }
 
 .section7-main {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     font-weight: bolder;
     line-height: 1.4em;
@@ -477,13 +507,13 @@ header {
 }
 
 .section7-button:hover {
-    background-color: #CC9999;
+    background-color: rgba(250, 235, 235, 0.89);
     color: #fff;
     border: 0;
 }
 
 .section7-button:active {
-    background-color: #996666;
+    background-color: rgba(250, 235, 235, 0.89);
     color: #fff;
     border: 0;
 }
@@ -500,12 +530,14 @@ header {
 }
 
 .section8-title {
+    background-color: rgba(250, 235, 235, 0.89);
     margin-top: 1em;
     color: #484747;
     text-shadow: none;
 }
 
 .section8-main {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     font-weight: bolder;
     line-height: 1.4em;
@@ -513,6 +545,7 @@ header {
 }
 
 .section8-mini {
+    background-color: rgba(250, 235, 235, 0.89);
     font-family: Cafe24Oneprettynight;
     line-height: 2em;
     font-size: 1rem;
@@ -588,12 +621,14 @@ header {
  * Cover
  */
 .cover {
+    background-color: rgba(250, 235, 235, 0.89);
     max-height: 40em;
     /*처음 사진 길이 조절*/
     padding: 0 1.5rem;
 }
 
 .cover .btn-lg {
+    background-color: rgba(250, 235, 235, 0.89);
     padding: .75rem 1.25rem;
     font-weight: 700;
 }
@@ -603,5 +638,6 @@ header {
  * Footer
  */
 .mastfoot {
+    background-color: rgba(250, 235, 235, 0.89);
     color: rgba(255, 255, 255, .5);
 }
