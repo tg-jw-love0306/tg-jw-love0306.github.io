@@ -77,16 +77,17 @@
 <body class="text-center" style="background-color: rgba(250, 235, 235, 0.89);">
 <div class="top-div" style="background-color: rgba(250, 235, 235, 0.89);">
     <!--    상단 문구-->
-    <div  style="background-color: rgba(250, 235, 235, 0.89);">
+    <div style="background-color: rgba(250, 235, 235, 0.89);">
         <p class="top-title">안태건 ♡ 황정원</p>
         <p class="top-title-sub">2022. 3. 6 일요일 오전 11시 30분<br/>
             라마다신도림호텔 5층<br/>
             세인트그레이스홀 </p>
     </div>
-    <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column" style="background-color: rgba(250, 235, 235, 0.89);">
+    <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
+            style="background-color: rgba(250, 235, 235, 0.89);">
     </header>
     <main class="inner" role="main" style="background-color: rgba(250, 235, 235, 0.89);">
-        <div class="section1-title section1-main"  style="background-color: rgba(250, 235, 235, 0.89);">
+        <div class="section1-title section1-main" style="background-color: rgba(250, 235, 235, 0.89);">
             <p class="section1-title section1-main">
                 예쁜 예감이 들었다 <br/>
                 우리는 언제나 손을 잡고 있게 될 것이다.
@@ -239,6 +240,9 @@
                 </a>
             </div>
         </div>
+
+
+        <!--        달력-->
         <div class="wow fadeInUp section5 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <p class="section5-title">Date</p>
             <div class="wow fadeInUp section5-title section5-month">
@@ -318,7 +322,7 @@
                 </p>
             </div>
             <!--            지도 넣기-->
-            <div class="wow fadeInUp" id="map" style="width:100%;height:350px;">
+            <div class="wow fadeInUp insert-image" id="map" style="width:90%;height:350px;">
 
                 <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=3651ef432b77f27d1ab807157fbb6731"
                         type="text/javascript"></script>
@@ -541,7 +545,7 @@
         <!--        카카오톡 공유하기-->
         <div class="wow fadeInUp section8-mini inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
              id="btnKaKao">
-            <div id="create-kakao-link-btn" href="javascript:createDefaultButton()">
+            <div href="javascript:createDefaultButton()" id="create-kakao-link-btn">
                 <button class="wow fadeInUp btn kakao-button" data-target="#create-kakao-link-btn"
                         type="button">
                     카카오톡으로 소식 공유하기
