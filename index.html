@@ -513,14 +513,39 @@
         <!--        카카오톡 공유하기-->
         <div class="wow fadeInUp section8-mini inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
              id="btnKaKao">
-            <a href="javascript:shareStory();">
-                <div id="create-kakao-link-btn">
-                    <button class="wow fadeInUp btn kakao-button" data-target="#create-kakao-link-btn"
-                            type="button">
-                        카카오톡으로 소식 공유하기
-                    </button>
-                </div>
-            </a>
+            <div href="javascript:createDefaultButton()" id="create-kakao-link-btn">
+                <button class="wow fadeInUp btn kakao-button" data-target="#create-kakao-link-btn"
+                        type="button">
+                    카카오톡으로 소식 공유하기
+                </button>
+            </div>
+            <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+            <script type="text/javascript">
+                Kakao.init('3651ef432b77f27d1ab807157fbb6731')
+                Kakao.Link.createDefaultButton({
+                    container: '#create-kakao-link-btn',
+                    objectType: 'feed',
+                    content: {
+                        title: '안태건 & 황정원의 모바일 청첩장',
+                        description: '2022.3.6(일) AM11:30 라마다 신도림 호텔 5층 세인트그레이스홀',
+                        imageUrl:
+                            'https://tg-jw-love0306.github.io/resource/img/wedding_picture/8a.jpg',
+                        link: {
+                            mobileWebUrl: 'https://tg-jw-love0306.github.io',
+                            webUrl: 'https://tg-jw-love0306.github.io',
+                        },
+                    },
+                    buttons: [
+                        {
+                            title: '청첩장 열어 보기',
+                            link: {
+                                mobileWebUrl: 'https://tg-jw-love0306.github.io',
+                                webUrl: 'https://tg-jw-love0306.github.io',
+                            },
+                        }
+                    ],
+                })
+            </script>
         </div>
         <!--        오디오 설정-->
         <audio autoplay loop src="resource/flowerEnding.mp3" type="audio/mpeg">
@@ -540,34 +565,5 @@
 <script crossorigin="anonymous"
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://developers.kakao.com/sdk/js/kakao.js" type="text/javascript"></script>
-<script>
-    function shareStory() {
-        Kakao.init('3651ef432b77f27d1ab807157fbb6731')
-        Kakao.Link.createDefaultButton({
-            container: '#create-kakao-link-btn',
-            objectType: 'feed',
-            content: {
-                title: '안태건 & 황정원의 모바일 청첩장',
-                description: '2022.3.6(일) AM11:30 라마다 신도림 호텔 5층 세인트그레이스홀',
-                imageUrl:
-                    'https://tg-jw-love0306.github.io/resource/img/wedding_picture/8a.jpg',
-                link: {
-                    mobileWebUrl: 'https://tg-jw-love0306.github.io',
-                    webUrl: 'https://tg-jw-love0306.github.io',
-                },
-            },
-            buttons: [
-                {
-                    title: '청첩장 열어 보기',
-                    link: {
-                        mobileWebUrl: 'https://tg-jw-love0306.github.io',
-                        webUrl: 'https://tg-jw-love0306.github.io',
-                    },
-                }
-            ],
-        })
-    }
-</script>
 </body>
 </html>
