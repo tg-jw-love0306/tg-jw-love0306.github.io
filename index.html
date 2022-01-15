@@ -501,7 +501,17 @@
         <br/><br/>
         <div class="wow fadeInUp section8 inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
              id="brideAndGroom">
-
+            <script type="text/javascript">
+                function copy_to_clipboard(str) {
+                    var tempElement = document.createElement("textarea");
+                    document.body.appendChild(tempElement);
+                    tempElement.value = str;
+                    tempElement.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempElement);
+                    alert("계좌번호가 복사되었습니다.");
+                }
+            </script>
             <button aria-controls="groom" aria-expanded="false"
                     class="wow fadeInUp btn section8-button" data-target="#groom"
                     data-toggle="collapse" type="button">
@@ -511,17 +521,21 @@
                  id="groom">
                 <div class="card-body section8-sub">
                     안재천 - 국민은행 52360296107401
-                    <span href="javascript:copy_to_clipboard(52360296107401)">
+                    <span class="section8-title section8-mini">
+                        <a href="javascript:copy_to_clipboard('52360296107401')">
                         <button class="btn copy-button" type="button">
                             복사하기
                         </button>
+                        </a>
                     </span>
                     <br/>
                     함재경 - 신한은행 110-005-056660
-                    <span href="javascript:copy_to_clipboard(110005056660)">
+                    <span class="section8-title section8-mini">
+                        <a href="javascript:copy_to_clipboard('110005056660')">
                         <button class="btn copy-button" type="button">
                             복사하기
                         </button>
+                        </a>
                     </span>
                 </div>
             </div>
@@ -533,21 +547,25 @@
             <div aria-labelledby="headingTwo" class="collapse" data-parent="#brideAndGroom"
                  id="bride">
                 <div class="card-body section8-sub">
-                    황명호 - 신한은행 110-518-385513 <br/>
+                    황명호 - 신한은행 110-518-385513
+                    <span class="section8-title section8-mini">
+                        <a href="javascript:copy_to_clipboard('110518385513')">
+                        <button class="btn copy-button" type="button">
+                            복사하기
+                        </button>
+                        </a>
+                    </span>
+                    <br/>
                     장미경 - 신한은행 110-169-990860
+                    <span class="section8-title section8-mini">
+                        <a href="javascript:copy_to_clipboard('110169990860')">
+                        <button class="btn copy-button" type="button">
+                            복사하기
+                        </button>
+                        </a>
+                    </span>
                 </div>
             </div>
-            <script type="text/javascript">
-                function copy_to_clipboard(str) {
-                    var tempElement = document.createElement("textarea");
-                    document.body.appendChild(tempElement);
-                    tempElement.value = str;
-                    tempElement.select();
-                    document.execCommand('copy');
-                    document.body.removeChild(tempElement);
-                    alert("coopied");
-                }
-            </script>
         </div>
         <!--        카카오톡 공유하기-->
         <div class="wow fadeInUp section8-mini inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
