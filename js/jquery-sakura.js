@@ -54,9 +54,9 @@
             blowAnimations: ['blow-soft-left', 'blow-medium-left', 'blow-hard-left', 'blow-soft-right', 'blow-medium-right', 'blow-hard-right'],
             className: 'sakura',
             fallSpeed: 0.5,
-            maxSize: 20,
-            minSize: 15,
-            newOn: 300,
+            maxSize: 15,
+            minSize: 11,
+            newOn: 50,
             swayAnimations: ['sway-0', 'sway-1', 'sway-2', 'sway-3', 'sway-4', 'sway-5', 'sway-6', 'sway-7', 'sway-8']
         };
 
