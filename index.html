@@ -520,7 +520,7 @@
             <div aria-labelledby="headingOne" class="collapse" data-parent="#brideAndGroom"
                  id="groom">
                 <div class="card-body section8-sub">
-                    안재천 - 국민은행 52360296107401
+                    안재천 - 국민은행 523602-96-107401
                     <span class="section8-title section8-mini">
                         <a href="javascript:copy_to_clipboard('52360296107401')">
                         <button class="btn copy-button" type="button">
@@ -570,6 +570,12 @@
         <!--        카카오톡 공유하기-->
         <div class="wow fadeInUp section8-mini inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
              id="btnKaKao">
+            <div href="javascript:createDefaultButton()" id="create-kakao-link-btn">
+                <button class="wow fadeInUp btn kakao-button" data-target="#create-kakao-link-btn"
+                        type="button">
+                    카카오톡으로 소식 공유하기
+                </button>
+            </div>
             <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
             <script type="text/javascript">
                 Kakao.init('3651ef432b77f27d1ab807157fbb6731')
@@ -597,12 +603,6 @@
                     ],
                 })
             </script>
-            <div href="javascript:createDefaultButton()" id="create-kakao-link-btn">
-                <button class="wow fadeInUp btn kakao-button" data-target="#create-kakao-link-btn"
-                        type="button">
-                    카카오톡으로 소식 공유하기
-                </button>
-            </div>
         </div>
         <!--        오디오 설정-->
         <audio autoplay loop src="resource/sounds/marriedLife.mp3" type="audio/mpeg">
