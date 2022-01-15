@@ -82,44 +82,6 @@
     <script crossorigin="anonymous"
             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
             src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
-    <script type="text/javascript">
-        Kakao.init('3651ef432b77f27d1ab807157fbb6731')
-        Kakao.Link.createDefaultButton({
-            container: '#create-kakao-link-btn',
-            objectType: 'feed',
-            content: {
-                title: '안태건 & 황정원의 모바일 청첩장',
-                description: '2022.3.6(일) AM11:30 라마다 신도림 호텔 5층 세인트그레이스홀',
-                imageUrl:
-                    'https://tg-jw-love0306.github.io/resource/img/wedding_picture/8a.png',
-                link: {
-                    mobileWebUrl: 'https://tg-jw-love0306.github.io',
-                    webUrl: 'https://tg-jw-love0306.github.io',
-                },
-            },
-            buttons: [
-                {
-                    title: '청첩장 열어 보기',
-                    link: {
-                        mobileWebUrl: 'https://tg-jw-love0306.github.io',
-                        webUrl: 'https://tg-jw-love0306.github.io',
-                    },
-                }
-            ],
-        })
-    </script>
-    <script type="text/javascript">
-        function copy_to_clipboard(str) {
-            var tempElement = document.createElement("textarea");
-            document.body.appendChild(tempElement);
-            tempElement.value = str;
-            tempElement.select();
-            document.execCommand('copy');
-            document.body.removeChild(tempElement);
-            alert("coopied");
-        }
-    </script>
 </head>
 <body class="text-center" style="background-color: rgba(250, 235, 235, 0.89);">
 <div class="top-div" style="background-color: rgba(250, 235, 235, 0.89);">
@@ -548,14 +510,14 @@
             <div aria-labelledby="headingOne" class="collapse" data-parent="#brideAndGroom"
                  id="groom">
                 <div class="card-body section8-sub">
-                    안재천 : 52360296107401 국민은행
+                    안재천 - 국민은행 52360296107401
                     <span href="javascript:copy_to_clipboard(52360296107401)">
                         <button class="btn copy-button" type="button">
                             복사하기
                         </button>
                     </span>
                     <br/>
-                    함재경 : 110-005-056660 신한은행
+                    함재경 - 신한은행 110-005-056660
                     <span href="javascript:copy_to_clipboard(110005056660)">
                         <button class="btn copy-button" type="button">
                             복사하기
@@ -571,10 +533,21 @@
             <div aria-labelledby="headingTwo" class="collapse" data-parent="#brideAndGroom"
                  id="bride">
                 <div class="card-body section8-sub">
-                    황명호 : 110-518-385513 신한은행<br/>
-                    장미경 : 110-169-990860 신한은행
+                    황명호 - 신한은행 110-518-385513 <br/>
+                    장미경 - 신한은행 110-169-990860
                 </div>
             </div>
+            <script type="text/javascript">
+                function copy_to_clipboard(str) {
+                    var tempElement = document.createElement("textarea");
+                    document.body.appendChild(tempElement);
+                    tempElement.value = str;
+                    tempElement.select();
+                    document.execCommand('copy');
+                    document.body.removeChild(tempElement);
+                    alert("coopied");
+                }
+            </script>
         </div>
         <!--        카카오톡 공유하기-->
         <div class="wow fadeInUp section8-mini inner cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"
@@ -585,6 +558,33 @@
                     카카오톡으로 소식 공유하기
                 </button>
             </div>
+            <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
+            <script type="text/javascript">
+                Kakao.init('3651ef432b77f27d1ab807157fbb6731')
+                Kakao.Link.createDefaultButton({
+                    container: '#create-kakao-link-btn',
+                    objectType: 'feed',
+                    content: {
+                        title: '안태건 & 황정원의 모바일 청첩장',
+                        description: '2022.3.6(일) AM11:30 라마다 신도림 호텔 5층 세인트그레이스홀',
+                        imageUrl:
+                            'https://tg-jw-love0306.github.io/resource/img/wedding_picture/8a.png',
+                        link: {
+                            mobileWebUrl: 'https://tg-jw-love0306.github.io',
+                            webUrl: 'https://tg-jw-love0306.github.io',
+                        },
+                    },
+                    buttons: [
+                        {
+                            title: '청첩장 열어 보기',
+                            link: {
+                                mobileWebUrl: 'https://tg-jw-love0306.github.io',
+                                webUrl: 'https://tg-jw-love0306.github.io',
+                            },
+                        }
+                    ],
+                })
+            </script>
         </div>
         <!--        오디오 설정-->
         <audio autoplay loop src="resource/sounds/marriedLife.mp3" type="audio/mpeg">
